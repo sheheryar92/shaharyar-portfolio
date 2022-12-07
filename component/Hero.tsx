@@ -1,6 +1,6 @@
 import React from "react";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
-import Circles from "./Circles";
+import HeroCircles from "./HeroCircles";
 import Profile from "../public/profile.png";
 import Image from "next/image";
 import Link from "next/link";
@@ -15,8 +15,12 @@ function Hero({}: Props) {
     onLoopDone: () => console.log("done from typewriter hook"),
   });
   return (
-    <div className="h-screen flex justify-center text-center flex-col overflow-hidden space-y-8 items-center">
-      <Circles />
+    <div className="h-screen flex justify-center 
+    
+   
+    
+    text-center flex-col overflow-hidden space-y-8 items-center">
+      <HeroCircles />
 
       <Image
         src={Profile}

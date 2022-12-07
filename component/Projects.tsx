@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from "framer-motion"
-
+import Image from 'next/image'
+import C from '../public/c.png'
 type Props = {}
 
 function Projects({}: Props) {
@@ -16,26 +17,27 @@ function Projects({}: Props) {
 
 <div className='w-full flex relative overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20  scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80 scrollbar-thin'>
  {projects.map( (p, i) => (
-    <div className='w-screen flex-shrink-0 snap-center items-center
+    <div key={i} className='w-screen flex-shrink-0 snap-center items-center
     transition duration-300 flex flex-col space-y-5 justify-center p-20 md:p-44  
-
     '>
-        <motion.img 
-        initial={{
-           y: -300,
-           opacity: 0
-        }}
-        transition={{
+      <motion.div    initial={{
+         y: -300,
+         opacity: 0
+      }}
+      transition={{
 duration: 1.2
-        }}
-        whileInView={{
-            opacity: 1,
-            y: 0
-        }}
-        src="https://c.saavncdn.com/373/LO-FI-Beats-Hindi-2022-20220308083357-500x500.jpg" alt="" 
-        
-        className='w-40 h-40 object-cover'
-        />
+      }}
+      whileInView={{
+          opacity: 1,
+          y: 0
+      }}>
+
+<Image src={C} 
+  className='w-40 h-40 object-cover'
+  alt=''
+/>
+
+      </motion.div>
 
 <div
 className='space-y-10 px-0 md:px-10 max-w-6xl'

@@ -11,9 +11,9 @@ function WorkEperince({}: Props) {
     animate={{opacity: 1}}
   transition={{duration: 1.5}}
     className='h-screen relative flex justify-evenly flex-col md:flex-row 
-    items-center text-left max-w-7xl px-8 mx-auto 
+    items-center  max-w-7xl  mx-auto 
     '>
-        <h3 className='tracking-[15px] text-gray-500 uppercase text-2xl text-center md:absolute top-24'>exprience</h3>
+        <h3 className='tracking-[15px] text-gray-500 uppercase text-2xl text-center absolute top-24'>exprience</h3>
 
 
 
@@ -23,10 +23,10 @@ function WorkEperince({}: Props) {
  scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80'>
     <ExperinceCard />
    <ExperinceCard />
-    {/*  <ExperinceCard />
-    <ExperinceCard /> */}
+  <ExperinceCard />
+    <ExperinceCard /> 
 </div> 
-{/* experinceCArd DIV*/}
+{/* ExperinceCard DIV*/}
     </motion.div>
   )
 }
