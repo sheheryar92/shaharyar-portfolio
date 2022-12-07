@@ -1,12 +1,15 @@
 import React from 'react'
 import { motion } from "framer-motion"
-import ReactLogo from '../public/react.png'
+
 import Image from 'next/image';
  type Props = {
     directionLeft? : boolean;
 }
 
 export default function SkillGrid({directionLeft}: Props) {
+
+  const ReactLogo = '/../public/react.png'
+
   return (
     <div className='group relative flex cursor-pointer '>
 
@@ -27,7 +30,11 @@ whileInView={{
 
 <Image
   src={ReactLogo}
-  className='rounded-full border border-gray-500 h-24 w-24 object-cover
+  width={90}
+  height={90}
+  
+  alt=""
+  className='rounded-full border border-gray-500  object-cover
   filter group-hover:grayscale transition duration-300 ease-out'
   />
 
@@ -35,7 +42,7 @@ whileInView={{
 
 
     
-<div className='absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-out group-hover:bg-white h-24 w-24 rounded-full z-0'>
+<div className='absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-out group-hover:bg-white h-20 w-20 rounded-full z-0'>
 <div className='flex items-center justify-center h-full '><p className='text-3xl font-bold text-black opacity-100'>100%</p></div>
 </div>
 

@@ -1,15 +1,16 @@
 import React from 'react'
-import About from '../component/About'
-import ContactMe from '../component/ContactMe'
-import Header from '../component/Header'
-import Hero from '../component/Hero'
-import Projects from '../component/Projects'
-import Skills from '../component/Skills'
-import WorkEperince from '../component/WorkExperince'
+import About from '../components/About'
+import ContactMe from '../components/ContactMe'
+import Header from '../components/Header'
+import Hero from '../components/Hero'
+import Projects from '../components/Projects'
+import Skills from '../components/Skills'
+import WorkEperince from '../components/WorkExperince'
+
 
 type Props = {}
 
-export default function index({}: Props) {
+function index({}: Props) {
   return (
     <div className=' bg-[rgb(36,36,36)] h-screen 
     overflow-scroll z-0 overflow-x-hidden scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80
@@ -53,3 +54,5 @@ export default function index({}: Props) {
     </div>
   )
 }
+
+export default index

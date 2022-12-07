@@ -2,14 +2,14 @@ import { MotionConfig } from 'framer-motion'
 import React from 'react'
 import { motion } from "framer-motion"
 import Image from 'next/image'
-import Ibex from '../public/ibex.jpg'
-import ReactLogo from '../public/react.png'
+
 type Props = {}
 
 function ExperinceCard({}: Props) {
 
 
-
+  const Ibex = '/../public/ibex.jpg'
+  const ReactLogo = '/../public/react.png'
 
 
   return (
@@ -28,8 +28,12 @@ function ExperinceCard({}: Props) {
   >
 
 <Image  alt='' src={Ibex} 
+height={100}
+width={100}
+className=' rounded-full  
 
-className='w-32 h-32 rounded-full   '
+
+0'
 />
 
   </motion.div>
@@ -43,15 +47,27 @@ className='w-32 h-32 rounded-full   '
 
 <div className='flex space-x-2 m-y-2'>
 <Image
-className='w-10 h-10 rounded-full object-cover object-center'
+height={30}
+width={30}
+className=' rounded-full object-cover 
+
+object-center'
 src={ReactLogo}
 alt=""  />
 <Image
-className='w-10 h-10 rounded-full object-cover object-center'
+height={30}
+width={30}
+className=' rounded-full object-cover 
+
+object-center'
 src={ReactLogo}
 alt=""  />
 <Image
-className='w-10 h-10 rounded-full object-cover object-center'
+height={30}
+width={30}
+className=' rounded-full object-cover 
+
+object-center'
 src={ReactLogo}
 alt=""  />
     </div>

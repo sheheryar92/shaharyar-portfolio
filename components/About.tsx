@@ -1,11 +1,13 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import Vercel from "../public/pp.jpg";
+
 
 type Props = {};
 
 function About({}: Props) {
+
+  const Vercel = '/../public/pp.jpg'
   return (
     <div
       className="h-screen max-w-7xl mx-auto relative
@@ -43,7 +45,8 @@ text-2xl"
       className="m:mb-0 flex-shrink-0 rounded-full  h-56 w-56 md:rounded-xl object-cover md:w-64 md:h-96 xl:w-[400px] xl:h-[500px] -mb-20"
 
       >
- <Image alt=""
+ <Image 
+ alt=""
         src={Vercel}
         height={300}
         width={300}

@@ -1,13 +1,16 @@
 import React from "react";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import HeroCircles from "./HeroCircles";
-import Profile from "../public/profile.png";
+
 import Image from "next/image";
 import Link from "next/link";
 
 type Props = {};
 
 function Hero({}: Props) {
+
+const Profile = '/../public/profile.png'
+
   const [text, flags] = useTypewriter({
     words: ["Hi , The Name's Sheheryar Qazi", "Love To Code", "Karachi"],
     loop: 2000,
@@ -24,6 +27,8 @@ function Hero({}: Props) {
 
       <Image
         src={Profile}
+        width={100}
+        height={100}
         alt="Picture of the author"
         className="w-32 h-32 object-cover mx-auto rounded-full relative"
       /> 

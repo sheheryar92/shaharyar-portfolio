@@ -1,11 +1,11 @@
 import React from 'react'
 import { motion } from "framer-motion"
 import Image from 'next/image'
-import C from '../public/c.png'
+
 type Props = {}
 
 function Projects({}: Props) {
-
+  const C = '/../public/c.png'
     const projects = [1,2,3,4,5,6]
 
   return (
@@ -33,7 +33,9 @@ duration: 1.2
       }}>
 
 <Image src={C} 
-  className='w-40 h-40 object-cover'
+width={20}
+height={20}
+  className=' object-cover'
   alt=''
 />
 
