@@ -26,7 +26,7 @@ function Header({}: Props) {
       transition={{
         duration: 1.2
       }}
-className="space-x-2"
+className="md:space-x-2"
       >
    <SocialIcon url="https://www.linkedin.com/in/syed-sheheryar-qazi-836a827a/"
 fgColor='gray'

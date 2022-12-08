@@ -33,7 +33,7 @@ function index({}: Props) {
 
 </section>
 
-<section className='snap-center'>
+<section id='about' className='snap-center'>
   <About />
 </section>
       <section  className='snap-center' >
